@@ -124,6 +124,14 @@ header .container ul a {
   border-radius: 30px;
   font-size: 18px;
   background: #66E3D9;
+  border: 1px solid #66E3D9;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.slider .content .link a:hover {
+  color: #66E3D9;
+  background: none;
 }
 
 .box-content {
@@ -320,6 +328,18 @@ footer .container {
       flex-wrap: wrap;
 }
 
+footer .facebook:hover {
+  color: #3b5999;
+}
+
+footer .twitter:hover {
+  color: #55acee;
+}
+
+footer .insta:hover {
+  color: #e4405f;
+}
+
 footer .box-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,6 +405,8 @@ footer .box-3 a {
 
 footer .box-3 i {
   font-size: 22px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .copy-right {

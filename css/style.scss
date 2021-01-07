@@ -85,6 +85,12 @@ header {
                 border-radius: 30px;
                 font-size: 18px;
                 background: #66E3D9;
+                border: 1px solid #66E3D9;
+                transition: .3s;
+                &:hover {
+                    color: #66E3D9;
+                    background: none;
+                }
             }
         }
     }
@@ -241,6 +247,16 @@ footer {
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    @each $selector, $color in 
+    (facebook, #3b5999),
+    (twitter, #55acee),
+    (insta, #e4405f) {
+        .#{$selector} {
+            &:hover {
+                color: $color;
+            }
+        }
+    }
     .box-1 {
         display: flex;
         align-items: flex-start;
@@ -280,6 +296,7 @@ footer {
         }
         i {
             font-size: 22px;
+            transition: .3s;
         }
     }
 }
